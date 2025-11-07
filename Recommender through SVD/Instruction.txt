@@ -1,0 +1,27 @@
+To run the code the following python libraries are needed: 
+-numpy
+-pandas
+-sklearn
+-matplotlib
+
+The code is divided in blocks inside the main function; each block is identified by a comment with a # telling what the following block is doing.
+
+The analyses performed are split between functions, and each function is providing a result:
+- svd_analysis plots the singular values in decreasing order, so we can decide k inside of the function;
+- recommendation gives the ordered recommendations given a movie (best first)
+
+The code is initially uncommented and can be run producing the same results in the same order as those indicated in the report. Doing so will result in the code producing several plots, that will have to be sequentially closed to continue with the execution.
+
+However, the original idea behind this division in blocks is to perform each analysis separately and, changing values in the code. The division in blocks allows to do so by commenting all the unneeded blocks, and performing the analysis only on the relevant one. 
+The only blocks that should not be commented are the first two: TOY DATAFRAME GENERATION, RANDOM RATINGS DATAFRAME GENERATION
+
+The function that generates the random ratings has all its parameters customizable:
+   - num_users is the number of users in the platform;
+   - num_movies is the number of movies in the platform.
+However, num_users should be always greater than or equal to num_movies
+
+k inside the function "svd_analysis" should be changed for each dataframe's analysis according to the plotted singular values.
+   
+
+
+
